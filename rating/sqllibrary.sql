@@ -13,7 +13,7 @@ CREATE TABLE reviews(
     user_id bigint not null,
     user_name varchar(255) not null,
     review_point int(1) not null,
-    rewiew_message text not null,
+    review_message text not null,
     attachment varchar(255),
     submit_date datetime DEFAULT current_timestamp not null,
     remarks varchar(255),

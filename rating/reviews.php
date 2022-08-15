@@ -111,7 +111,7 @@
 	        		<input type="text" name="product_id" id="product_id" class="form-control" value="1" placeholder="Enter product id" />
 	        	</div>
 	        	<div class="form-group">
-	        		<textarea name="rewiew_message" id="rewiew_message" class="form-control" placeholder="Type Review Here">review</textarea>
+	        		<textarea name="review_message" id="review_message" class="form-control" placeholder="Type Review Here">review</textarea>
 	        	</div>
                 <div class="form-group">
 	        		<textarea name="attachment" id="attachment" class="form-control" placeholder="Type attachment Here">attachment</textarea>
@@ -211,7 +211,7 @@ $(document).ready(function(){
 
         var review_message = $('#review_message').val();
 
-        if(user_name == '' || rewiew_message == '')
+        if(user_name == '' || review_message == '')
         {
             alert("Please Fill Both Field");
             return false;
@@ -320,7 +320,7 @@ $(document).ready(function(){
                         html += '</div>';
                         html += '<div class="col-12">';
 
-                        html += data.review_point[count].rewiew_message;
+                        html += data.review_point[count].review_message;
 
                         html += '</div>';
 

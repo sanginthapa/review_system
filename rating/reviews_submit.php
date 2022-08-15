@@ -21,8 +21,8 @@ echo "submit in process";
 
 	$query = "
 	INSERT INTO reviews 
-	(product_id,user_id,user_name, review_point, rewiew_message, attachment,submit_date) 
-	VALUES (:product_id,:user_id,:user_name, :review_point, :rewiew_message, :attachment,:submit_date)
+	(product_id,user_id,user_name, review_point, review_message, attachment,submit_date) 
+	VALUES (:product_id,:user_id,:user_name, :review_point, :review_message, :attachment,:submit_date)
 	";
 
 	echo time();
@@ -57,7 +57,7 @@ if(isset($_POST["action"]))
 			'product_id'		=>	$row["product_id"],
 			'user_id'		=>	$row["user_id"],
 			'user_name'		=>	$row["user_name"],
-			'rewiew_message'	=>	$row["rewiew_message"],
+			'review_message'	=>	$row["review_message"],
 			'rating'		=>	$row["review_point"],
 			'attachment'		=>	$row["attachment"],
 			'datetime'		=>	date('l jS, F Y h:i:s A', $row["submit_date"])
