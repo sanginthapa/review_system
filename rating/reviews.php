@@ -209,7 +209,7 @@ $(document).ready(function(){
         var product_id = $('#product_id').val();
         var attachment = $('#attachment').val();
 
-        var rewiew_message = $('#rewiew_message').val();
+        var review_message = $('#review_message').val();
 
         if(user_name == '' || rewiew_message == '')
         {
@@ -221,7 +221,7 @@ $(document).ready(function(){
             $.ajax({
                 url:"reviews_submit.php",
                 method:"POST",
-                data:{rating_data:rating_data, product_id:product_id,user_id:user_id, user_name:user_name, rewiew_message:rewiew_message, attachment:attachment},
+                data:{rating_data:rating_data, product_id:product_id,user_id:user_id, user_name:user_name, review_message:review_message, attachment:attachment},
                 success:function(data)
                 {
                     $('#review_modal').modal('hide');

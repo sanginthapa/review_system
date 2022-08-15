@@ -13,7 +13,7 @@ echo "submit in process";
 		':user_name'		=>	$_POST["user_name"],
 		':product_id'		=>	$_POST["product_id"],
 		':review_point'		=>	$_POST["rating_data"],
-		':rewiew_message'		=>	$_POST["rewiew_message"],
+		':review_message'		=>	$_POST["review_message"],
 		':attachment'		=>	$_POST["attachment"],
 		':submit_date'		=>	time()
 	);
